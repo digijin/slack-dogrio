@@ -1,0 +1,15 @@
+{
+  "name": "dogrio",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.5",
+    "body-parser": "^1.9.0"
+  }
+}
