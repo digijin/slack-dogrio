@@ -23,6 +23,7 @@ app.post '/', (req, res) ->
 		text = text.replace ' such', '/such'
 		text = text.replace ' much', '/much'
 		text = text.replace ' very', '/very'
+		text = text.replace ' many', '/many'
 
 		text = text.replace ' ', ''
 
@@ -31,7 +32,7 @@ app.post '/', (req, res) ->
 			text
 		}
 
-		res.send JSON.stringify reply
+		# res.send JSON.stringify reply
 	else
 		res.send out
 	
