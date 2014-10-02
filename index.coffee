@@ -18,6 +18,7 @@ app.post '/', (req, res) ->
 	text = req.body.text
 
 	# parse text here
+	text = text.replace 'wow ', 'wow/'
 	text = text.replace ' such', '/such'
 	text = text.replace ' much', '/much'
 	text = text.replace ' very', '/very'
