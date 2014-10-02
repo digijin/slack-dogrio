@@ -17,21 +17,24 @@ app.post '/', (req, res) ->
 
 	text = req.body.text
 
-	# parse text here
-	text = text.replace 'wow ', 'wow/'
-	text = text.replace ' such', '/such'
-	text = text.replace ' much', '/much'
-	text = text.replace ' very', '/very'
+	if text
+		# parse text here
+		text = text.replace 'wow ', 'wow/'
+		text = text.replace ' such', '/such'
+		text = text.replace ' much', '/much'
+		text = text.replace ' very', '/very'
 
-	text = text.replace ' ', ''
+		text = text.replace ' ', ''
 
 
-	reply = {
-		text
-	}
+		reply = {
+			text
+		}
 
-	res.send JSON.stringify reply
-	# res.send out
+		res.send JSON.stringify reply
+	else
+		res.send out
+	
 app.get '/', (req, res) ->
 	# console.log req
 	res.send out
