@@ -23,6 +23,7 @@ app.post '/', (req, res) ->
 		text: 'much reply'
 	}
 
+	res.send JSON.stringify reply
 	# res.send out
 app.get '/', (req, res) ->
 	# console.log req
