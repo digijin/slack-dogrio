@@ -28,12 +28,16 @@ app.post '/', (req, res) ->
 	if text
 		# parse text here
 		text = text.replace 'wow ', 'wow/'
+		text = text.replace ', ', '/'
+		text = text.replace ',', '/'
+		text = text.replace ' wow', '/wow'
 		text = text.replace ' such', '/such'
 		text = text.replace ' much', '/much'
 		text = text.replace ' very', '/very'
 		text = text.replace ' many', '/many'
-		text = text.replace ', ', '/'
-		text = text.replace ',', '/'
+		text = text.replace ' what', '/what'
+		text = text.replace ' why', '/why'
+		text = text.replace ' so', '/so'
 
 		text = text.replace /\s/g, ''
 
