@@ -32,6 +32,8 @@ app.post '/', (req, res) ->
 		text = text.replace ' much', '/much'
 		text = text.replace ' very', '/very'
 		text = text.replace ' many', '/many'
+		text = text.replace ', ', '/'
+		text = text.replace ',', '/'
 
 		text = text.replace /\s/g, ''
 
