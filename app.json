@@ -1,0 +1,7 @@
+{
+  "name": "slack-dogrio",
+  "description": "A integration between slack and dogrio",
+  "repository": "https://github.com/digijin/slack-dogrio",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "dogrio", "doge", "slack"]
+}
