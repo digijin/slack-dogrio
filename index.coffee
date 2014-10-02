@@ -15,6 +15,14 @@ app.post '/', (req, res) ->
 	out += '<br />'
 	out += JSON.stringify req.body
 
+	
+	user = req.body.user_id
+
+	if user
+		if user is "USLACKBOT"
+			res.send "hi slackbot"
+			return
+
 	text = req.body.text
 
 	if text
@@ -32,7 +40,7 @@ app.post '/', (req, res) ->
 			text
 		}
 
-		# res.send JSON.stringify reply
+		res.send JSON.stringify reply
 	else
 		res.send out
 	
