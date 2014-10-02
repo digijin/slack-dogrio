@@ -35,6 +35,7 @@ app.post '/', (req, res) ->
 
 		text = text.replace /\s/g, ''
 
+		text = ' http://dogr.io/' + text
 
 		reply = {
 			text
