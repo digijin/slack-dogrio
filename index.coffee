@@ -14,11 +14,9 @@ out = form
 app.post '/', (req, res) ->
 	out += '<br />'
 	out += JSON.stringify req.body
-	# console.log req
 	res.send out
 app.get '/', (req, res) ->
 	console.log req
-	# JSON.stringify req
 	res.send out
 
 port = process.env.PORT or 5000
